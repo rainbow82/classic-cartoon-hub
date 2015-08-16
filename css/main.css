@@ -1,16 +1,101 @@
 /* Styling for the main componets of page*/
 
-/*header{
-    margin: 0 0 5px 0;
-    height: 150px;
+#header{
+    float: left;
+    margin: 0;
+    width: 100%;
+    display: inline;
     padding: 0;
-}*/
+}
 
 #logo{
     margin: 0;
-    height: 150px;
-    width: 150px;
-    display: inline-block !important;
+    height: 125px;
+    width: 125px;
+    float: left;
+    padding: 0;
+   /* display: inline !important*/;
+}
+
+
+
+/* Main Navigation Menu*/
+
+#main_navigation{
+    float: right;
+    margin-top: 4%;
+    width: 90%;
+    margin-left: 0;
+   /* display: inline;*/
+   /* display: inline-block !important;*/
+   /* padding: 0;
+    margin: 0;
+    top: 50px;
+    position: absolute;*/
+}
+
+#main_navigation ul{
+   /* display: inline;*/
+    margin: 0;
+    padding: 0;
+}
+
+
+#main_navigation li{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+    padding: .5%;
+    list-style: none;
+}
+
+#main_navigation li a{
+    display: block;
+	text-decoration: none;
+    /*button styling here*/
+     border-radius: 15%;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    background-color: yellow;
+    padding: 3%;
+        
+}
+
+#main_navigation a:hover{
+    color: deeppink;
+    /*what color when main button gets hoverd over*/
+}
+
+/*drop down navigation list*/
+#main_navigation li ul{
+    display: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    /*background color for color of dropdown*/
+}
+
+#main_navigation li:hover ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#main_navigation li:hover li{
+    float: none;
+    width: auto;
+}
+
+#main_navigation li:hover li a{
+    width: auto;
+    /* color of buttons on dropdown*/
+}
+
+#main_navigation li li a:hover {
+/*background color of the button*/
+    background-color: darkmagenta;
 }
 
 body{
@@ -22,59 +107,38 @@ body{
 }
 
 .wrapper{
-    width: 75%;
-    background-color: dodgerblue;
-    padding: 0;
-    border: 2px solid green;
+    max-width: 75%;
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 2% 2%;
+    height: auto;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: -50;
+    border-radius: 5%;
+}
+
+.wrapper p {
+    width: 30%;
+    float: right;
+    margin-right: 5%;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 800;
+    color: #48F70C; /*neon green*/
 }
 
 audio{
     float: right;
 }
 
-p{
-    color:white; 
-}
- img{
-    height: 150px;
-    width: 150px;
-     
-}
-
-/* Main Navigation Menu*/
-#header { width: 100%;}
-
-#main_navigation{
-    width: 90%;
-    background-color: blue;
-    display: inline-block !important;
-    padding: 0;
-    margin: 0;
-    top: 50px;
-    position: absolute;
-}
-
-#main_navigation ul{
-    list-style: none;
-}
-
-#main_navigation li{
-    background-color: yellow;
-    padding: 5px;
-    display: inline;
-}
-
-#main_navigation li a{
-    text-decoration: none;
-}
-
-#main_navigation .selected{
-    color: forestgreen;
-    background-color: deeppink;
-}
 
 .titles{
     color: hotpink;
+    z-index: -1;
     font-size: 50px;
     margin: 0;
     font-family: 'Indie Flower', cursive;
@@ -84,14 +148,50 @@ p{
 }
 
 
+/************ HOME PAGE *************/
 
+
+/* sets the dimensions for the box that contains the scrolling image */
+
+#page-wrap { 
+  float: left;
+  width: 60%;
+  max-width: 900px; 
+  background: none;
+  margin: 20px auto;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+   z-index: -1;
+}
+
+#page-wrap:before, #page-wrap:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  background: -webkit-linear-gradient(left, rgba(255,255,255,100), rgba(255,255,255,0));
+}
+
+#page-wrap:before {
+  left: 0;
+}
+
+#page-wrap:after {
+  right: 0;
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,100));
+}
 
 
 
 /************ ABOUT PAGE *************/
 
-
-
+#answers{
+    font-family: 'Indie Flower', cursive;
+    font-weight: 800;
+    color: #48F70C; /*neon green*/
+}
 
 
 
