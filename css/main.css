@@ -2,7 +2,7 @@
 
 .container {
     width: 100%;
-    background-color: black;
+    background-color: white;
 }
 
 
@@ -43,13 +43,14 @@
 }
 
 .btn{
-    background-color: black;
+    background-color: yellow;
 }
 
 
 .content{
     margin-top: 12%;
-    width: 85%;
+    margin-left: 5%;
+    width: 95%;
 }
 
 p{
@@ -69,25 +70,9 @@ p{
 }
 
 
-/* used on HOME & ABOUT pages */
-.wrapper{
-    max-width: 85%;
-    background-image: url("../img/background.jpg");
-    background-position: center;
-    background-repeat: repeat;
-    margin: 0 auto;
-    margin-top: 150px;
-    padding: 2% 2%;
-    height: auto;
-    min-height: 100%;
-    overflow: hidden;
-    position: relative;
-    z-index: -50;
-    border-radius: 5%;
+footer{
+    margin-top: 5%;
 }
-
-
-
 
 /************ HOME PAGE *************/
 
@@ -127,6 +112,13 @@ p{
 
 /************ ABOUT PAGE *************/
 
+.wrapper-about{
+    margin-top: 10%;
+
+}
+
+
+
 #answers{
     font-family: 'Indie Flower', cursive;
     font-weight: 800;
@@ -149,35 +141,158 @@ p{
 
 .col-lg-6{
     margin-bottom: 1.5%;
+    margin-right: 3%;
+    padding: 5%;
+}
+
+.col-lg-4{
+    margin-bottom: 1.5%;
+    margin-right: 3%;
+    padding: 5%;
 }
 
 
-
-#video {
-    background: white;
+.glyphicon{
+    margin-left: 35%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 5em;
+    color: deepskyblue;
 }
 
 
-#audio {
-    background: white;
+.audio-body {
+    background: deepskyblue;
+    width: auto;
+    padding: 3%;
+    align-items: center;
+   
+}
+
+audio{
+    margin-right: 1.5%;
+    padding-left: 0;
+   
 }
 
 
+.modal-body{
+    margin-left: 6%;
+}
 
-.fact{
-    background-color: yellow;
-    width: 100px;
-    position:static;
-    z-index: -1;
+.popover{
+    background-color: aquamarine;
+    color: black;
+    border: 5px solid hotpink;
+}
+
+.btn{
+    margin: 3%;
+}
+
+.button_img{
+    width: auto;
+    height: auto;
+    /*border: 5px solid #80ff00;*/
+    align-content: center;
+   /* box-shadow: 5px 5px 10px 5px #ffffb2;*/
+}
+
+.btn:hover {
+    -moz-box-shadow: 0 0 30px #fff; -webkit-box-shadow: 0 0 30px #fff; box-shadow: 5px 5px 10px 5px #ffffb2; 
+
+5px 5px 10px 5px #ffffb2
     
- }
+}
+/************* Forum Page *********************/
 
+#carousel-forum {
+   
+}
 
+.carousel-inner{
+    background-color: white;
+    max-height: 200px;
+    max-width: 1200px;
+    marign: 0;
+    padding: 0;
+   
+}
 
-#pic{
-    width: 100%;
+.carousel-inner .col-lg-6{
+    margin:0;
+    padding: 0;
+}
+    
+
+.wrapper{
+    width: 85%;
+    background-color: blue;
+    margin-left: 8%;
+    margin-right: 5%;
+    margin-top: 12%;
+    margin-bottom: 5%;
+}
+
+.forum-nav{
+    background-color: aliceblue;
+    margin: 1%;
+}
+
+.forum-header{
+    color: black;
+    weight: bold;
+    margin-bottom: 2%;
+    font-size: 3em;
+    padding: 0;
     
 }
+
+.forum-title{
+    background-color: azure;
+    margin: 0;
+    padding:0;
+}
+
+.forum-info {
+    background-color: whitesmoke;
+    margin: 0;
+    padding:0;
+}
+
+.glyphicon-pencil{
+    font-size: 2em;
+    color: black;
+}
+
+
+
+/************* Contact Page *********************/
+
+.wrapper-contact{
+    max-width: 75%;
+    background-color: bisque;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+.form-control{
+    width:50%;
+    margin-left: 2%;
+}
+
+.form-group{
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
 
 
 
