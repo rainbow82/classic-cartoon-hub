@@ -93,6 +93,10 @@ section{
 
 #topSection{
     margin-top: 3em;
+    max-height: 150px;
+}
+ #why{
+    padding-top: -30px;
 }
 
 .filler{
@@ -101,10 +105,15 @@ section{
 }
 
 .questions{
-    font-size: 22px;
+    font-size: 30px;
     color: black;
     display: inline-flex;
     padding: 0 2em 0 2em;
+    margin-left: 2em;
+}
+.questions:hover{
+    text-decoration: underline;
+    color: blue;
 }
 #page-wrap {
   width: 55%;
