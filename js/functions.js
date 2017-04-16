@@ -1,12 +1,29 @@
+//enlarge title when hovered over
+$(".titles").mouseover(
+    function(){
+        $(this).addClass("hover");
+    }
+);
+
+$(".titles").mouseleave(
+    function(){
+        $(this).removeClass("hover");
+    }
+);
+
+//$( ".titles" ).off( "mouseenter mouseleave" );
+
+
+
 // collapse plug in
 $('.collapse').collapse()
 
 
-//initialing popovers 
+//initialing popovers
 
 $(function() {
   $('[data-toggle="popover"]').popover()
- 
+
 })
 
 
@@ -34,8 +51,8 @@ $("#logIn_btn").click(function(){
 });
 
  $("#modal_trigger").leanModal({
-	 top : 200, overlay : 0.6, 
-	 closeButton: ".modal_close" 
+	 top : 200, overlay : 0.6,
+	 closeButton: ".modal_close"
 });
 
 $(function () {
@@ -63,7 +80,7 @@ $(function () {
         return false;
     });
 
-})	
+})
 
 
  // connect to control panel when login successful

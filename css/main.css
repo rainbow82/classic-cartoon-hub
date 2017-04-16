@@ -1,57 +1,27 @@
 /* Styling for the main componets of page*/
 
-
+body{
+    background: linear-gradient(to bottom right, black, blue);
+}
 .container-fluid {
     width: 100%;
     background-color: black;
     padding: 0;
 }
 
-.navbar-default{
-    margin-top: 2%;
+.nav{
     width: 100%;
     border: none;
-    border-bottom: 3px solid yellow;
     color: hotpink;
+    margin-left: 5%;
+    margin-top: 2%;
 }
 
-
-/* NAVIGATION */
-.main-logo {
-    width: 125px;
-    height: 125px;
-    margin 1%;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    background: url("../img/logo.png") no-repeat;
-    background-size: 100%;
+.nav li {
+    background-color: aquamarine;
+    margin-left: 5%;
+    border-radius: 25%;
 }
-
-a{
-    /*background-color: yellow;*/
-    /*margin: 1% 5% 5% 5%;*/
-    font-size: 1.3em;
-    font-weight: 600; 
-}
-
-.navbar-brand{
-    margin: 1%;
-}
-
-
-
-.navbar-nav{
-    margin-top: 2.5%;
-}
-
-.navbar-nav li a{
-    font-size: 1.5em;
-    font-weight: 600;
-    background-color: yellow;
-    position: relative;
-}
-
 
 .dropdown:hover .dropdown-menu{
     display: block;
@@ -74,7 +44,7 @@ a{
 
 
 .content{
-    margin-top: 6%;
+    margin-top: 5%;
     margin-left: 5%;
     width: 95%;
      z-index: -100;
@@ -96,6 +66,11 @@ p{
     clear: both;
 }
 
+.hover{
+    color: white;
+    font-size: 75px;
+}
+
 
 footer{
     margin-top: 5%;
@@ -108,9 +83,9 @@ footer{
 
 /* sets the dimensions for the box that contains the scrolling image */
 
-#page-wrap { 
-  width: 80%;
-  max-width: 1000px; 
+#page-wrap {
+  width: 55%;
+  max-width: 1000px;
   background: none;
   margin: 20px auto;
   position: relative;
@@ -207,7 +182,7 @@ footer{
 audio{
     margin-right: 1.5%;
     padding-left: 0;
-   
+
 }
 
 
@@ -244,10 +219,10 @@ audio{
 }
 
 .btn:hover {
-    -moz-box-shadow: 0 0 30px #fff; -webkit-box-shadow: 0 0 30px #fff; box-shadow: 5px 5px 10px 5px #ffffb2; 
+    -moz-box-shadow: 0 0 30px #fff; -webkit-box-shadow: 0 0 30px #fff; box-shadow: 5px 5px 10px 5px #ffffb2;
 
 /*5px 5px 10px 5px #ffffb2*/
-    
+
 }
 
 /************* Forum Page *********************/
@@ -262,7 +237,7 @@ audio{
     max-width: 1200px;
     marign: 10%;
     padding: 0;
-   
+
 }
 
 .carousel-inner .col-lg-6{
@@ -278,7 +253,7 @@ audio{
 .item{
     padding: 1.5%;
 }
-    
+
 
 .wrapper{
     width: 90%;
@@ -491,7 +466,7 @@ a.btn_red  {
      font-size: 16px;
      text-align:  center;
 }
- 
+
 .social_login .fb .icon  {
     background: #3B5998;
 }
@@ -608,16 +583,3 @@ a.btn_red  {
      clear:  both;
      overflow:  hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
